@@ -35,25 +35,5 @@ rosrun rqt_reconfigure rqt_reconfigure
 + Open another terminal on PC: 
 ```
 cd ~/catkin_ws/src/lane_following/scripts
-python lane_following_real_8.py
-```
---- 
-## Navigation
-+ Open one terminal on PC: 
-```
-roscore
-```
-+ Open one terminal on Pi: 
-```
-roslaunch turtlebot3_bringup turtlebot3_robot.launch
-```
-+ Open terminal on PC, one code for each: 
-```
-roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
-roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
-```
-+ Use the keyboard to estimate the initial pose and help it judge the environment. Then, open another terminal on PC: 
-```
-cd ~/.catkin_ws
-rosrun hit_nav move_base_square_hit
+python final_test2.py
 ```
